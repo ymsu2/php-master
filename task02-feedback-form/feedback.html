@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Обратная связь">
+<meta name="author" content="">
+<meta name="robots" content="index, follow" />
+<title>Обратная связь</title>
+<body>
+
+<h2>Обратная связь</h2>
+<form id="feedback_form" action="/send.php" method="POST">
+	<div>
+		<div>
+			<label for="fullname">ФИО</label>
+			<span>*</span>
+			<input required type="text" name="user_name" value="" placeholder="ФИО">
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="adress">Адрес</label>
+			<span></span>
+			<input type="text" name="user_adress" value="" placeholder="Адрес">
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="phone">Мобильный телефон</label>
+			<span>*</span>
+			<input required type="text" name="user_phone" value="" placeholder="Мобильный телефон">
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="email">Ваш E-mail</label>
+			<span></span>
+			<input type="text" name="user_email" value="" placeholder="Email Address">
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="message">Комментарий</label> 
+			<span></span>
+			<textarea name="MESSAGE" cols="30" rows="5"></textarea>
+		</div>
+	</div>
+	<div>
+		<div>
+			</br><input size=20 type = "file" name="user_file">
+		</div>
+	</div>
+	<div>
+		<div>
+		</br><input type="reset" value="Сброс">
+		</br></br><input type="submit" name="submit" value="Отправить">
+		</div>
+	</div>
+	<p>* помечены обязательные поля для заполнения</p>
+</form>
+
+</body>
+</html>
